@@ -85,6 +85,17 @@
 			{/each}
 		</div>
 	</div>
+
+	<div>
+		Reference: <a class="underline underline-offset-2" href="https://date-fns.org/docs/format"
+			>https://date-fns.org/docs/format</a
+		>
+	</div>
+
+	<div>
+		&copy; {new Date().getFullYear()}
+		<a class="underline underline-offset-2" href="https://michaelbonner.dev/"> Michael Bonner </a>
+	</div>
 </div>
 
 <style lang="postcss">
