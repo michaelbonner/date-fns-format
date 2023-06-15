@@ -70,7 +70,7 @@
 		</div>
 	</div>
 	<div class="grid gap-4">
-		<h2 class="text-2xl font-bold">Useful Starters</h2>
+		<h2 class="text-2xl font-bold">Useful Formats</h2>
 
 		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
 			{#each formatStrings as formatString}
