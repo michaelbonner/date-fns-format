@@ -58,7 +58,7 @@
 				<label>
 					<input
 						bind:value={testFormat}
-						class="border py-2 px-4 text-sm rounded"
+						class="border py-2 px-4 text-sm rounded bg-white bg-opacity-50"
 						placeholder="Test format string"
 						type="text"
 					/>
@@ -72,11 +72,11 @@
 
 		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
 			{#each formatStrings as formatString}
-				<div class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
+				<div class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 					<dt class="text-sm">
 						<input
 							disabled
-							class="py-1 px-2 italic text-sm border border-dashed border-gray-300 rounded"
+							class="py-1 px-2 italic text-sm border-2 border-dashed border-gray-300 rounded bg-white bg-opacity-50"
 							value={formatString}
 						/>
 					</dt>
