@@ -53,7 +53,7 @@
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl lg:text-3xl font-bold">Test</h2>
-		<div class="grid gap-1 border py-2 px-4 bg-white">
+		<div class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 			<dt class="text-sm">
 				<label>
 					<input
@@ -72,7 +72,7 @@
 
 		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
 			{#each formatStrings as formatString}
-				<div class="grid gap-1 border py-2 px-4 bg-white">
+				<div class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 					<dt class="text-sm">
 						<input
 							disabled
