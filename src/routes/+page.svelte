@@ -42,7 +42,7 @@
 	];
 </script>
 
-<div class="grid gap-12">
+<div class="grid gap-12 py-4">
 	<h1 class="text-3xl lg:text-5xl font-bold">date-fns format helper</h1>
 	<div class="text-xl">
 		<span>Reference Time:</span>
