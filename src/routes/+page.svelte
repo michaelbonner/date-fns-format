@@ -43,10 +43,8 @@
 </script>
 
 <div class="grid gap-12">
-	<h1 class="text-3xl font-bold underline underline-offset-4">
-		<code>date-fns</code> format helper
-	</h1>
-	<div class="text-2xl">
+	<h1 class="text-3xl lg:text-5xl font-bold">date-fns format helper</h1>
+	<div class="text-xl">
 		<span>Reference Time:</span>
 		<span>
 			{now.toLocaleDateString()}
@@ -54,7 +52,7 @@
 		</span>
 	</div>
 	<div class="grid gap-4">
-		<h2 class="text-2xl font-bold">Test</h2>
+		<h2 class="text-2xl lg:text-3xl font-bold">Test</h2>
 		<div class="grid gap-1 border py-2 px-4 bg-white">
 			<dt class="text-sm">
 				<label>
@@ -70,7 +68,7 @@
 		</div>
 	</div>
 	<div class="grid gap-4">
-		<h2 class="text-2xl font-bold">Useful Formats</h2>
+		<h2 class="text-2xl lg:text-3xl font-bold">Useful Formats</h2>
 
 		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
 			{#each formatStrings as formatString}
