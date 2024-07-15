@@ -42,6 +42,24 @@
 	];
 </script>
 
+<svelte:head>
+	<title>date-fns format helper</title>
+	<meta name="theme-color" content="#076971" />
+	<meta name="color-scheme" content="light only" />
+	<meta
+		name="description"
+		content="A simple tool to help keep track of commonly used date formats. The tool is also helpful to test custom date formats."
+	/>
+
+	<meta property="og:image" content="https://date-fns.michaelbonner.dev/og-image.jpg" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="date-fns format helper" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+
+	<link rel="canonical" href="https://date-fns.michaelbonner.dev/" />
+</svelte:head>
+
 <div class="grid gap-12 py-4">
 	<h1 class="text-3xl lg:text-5xl font-bold">date-fns format helper</h1>
 	<div class="text-xl">
