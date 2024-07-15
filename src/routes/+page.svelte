@@ -23,7 +23,7 @@
 		'PP',
 		'PPP',
 		"PP 'at' p",
-		'MM/dd/Y hh:mm a',
+		'MM/dd/y hh:mm a',
 		"iii M/d 'at' p",
 		'yyyy-MM-dd HH:mm:ss',
 		'MM/dd/yyyy',
