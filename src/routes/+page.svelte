@@ -60,7 +60,7 @@
 	<link rel="canonical" href="https://date-fns.michaelbonner.dev/" />
 </svelte:head>
 
-<div class="grid gap-12 py-4">
+<main class="grid gap-12 py-4">
 	<h1 class="text-3xl lg:text-5xl font-bold">date-fns format helper</h1>
 	<div class="text-xl">
 		<span>Reference Time:</span>
@@ -90,16 +90,17 @@
 
 		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
 			{#each formatStrings as formatString}
-				<div class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl">
+				<dl class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 					<dt class="text-sm">
 						<input
+							aria-label={`Format string: ${formatString}`}
 							disabled
 							class="py-1 px-2 italic text-sm border-2 border-dashed border-gray-300 rounded bg-white bg-opacity-50"
 							value={formatString}
 						/>
 					</dt>
 					<dd class="font-bold">{format(now, formatString)}</dd>
-				</div>
+				</dl>
 			{/each}
 		</div>
 	</div>
@@ -114,7 +115,7 @@
 		&copy; {new Date().getFullYear()}
 		<a class="underline underline-offset-2" href="https://michaelbonner.dev/"> Michael Bonner </a>
 	</div>
-</div>
+</main>
 
 <style lang="postcss">
 	:global(html) {
