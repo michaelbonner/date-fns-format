@@ -71,7 +71,7 @@
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl lg:text-3xl font-bold">Test</h2>
-		<div class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
+		<dl class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 			<dt class="text-sm">
 				<label>
 					<input
@@ -83,7 +83,7 @@
 				</label>
 			</dt>
 			<dd class="font-bold">{testFormatDateString}</dd>
-		</div>
+		</dl>
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl lg:text-3xl font-bold">Useful Formats</h2>
