@@ -35,6 +35,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"date-fns": "^3.6.0"
+		"date-fns": "^4.1.0"
 	}
 }
