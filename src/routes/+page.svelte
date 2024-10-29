@@ -61,7 +61,7 @@
 </svelte:head>
 
 <main class="grid gap-12 py-4">
-	<h1 class="text-3xl lg:text-5xl font-bold">date-fns format helper</h1>
+	<h1 class="text-3xl font-bold lg:text-5xl">date-fns format helper</h1>
 	<div class="text-xl">
 		<span>Reference Time:</span>
 		<span>
@@ -70,13 +70,13 @@
 		</span>
 	</div>
 	<div class="grid gap-4">
-		<h2 class="text-2xl lg:text-3xl font-bold">Test</h2>
-		<dl class="grid gap-1 border py-3 px-6 bg-white bg-opacity-50 rounded-xl">
+		<h2 class="text-2xl font-bold lg:text-3xl">Test</h2>
+		<dl class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl border">
 			<dt class="text-sm">
 				<label>
 					<input
 						bind:value={testFormat}
-						class="border py-2 px-4 text-sm rounded bg-white bg-opacity-50"
+						class="py-2 px-4 text-sm bg-white bg-opacity-50 rounded border"
 						placeholder="Test format string"
 						type="text"
 					/>
@@ -86,16 +86,16 @@
 		</dl>
 	</div>
 	<div class="grid gap-4">
-		<h2 class="text-2xl lg:text-3xl font-bold">Useful Formats</h2>
+		<h2 class="text-2xl font-bold lg:text-3xl">Useful Formats</h2>
 
-		<div class="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
+		<div class="grid gap-y-2 gap-x-4 md:grid-cols-2 xl:grid-cols-3">
 			{#each formatStrings as formatString}
 				<dl class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl">
 					<dt class="text-sm">
 						<input
 							aria-label={`Format string: ${formatString}`}
 							disabled
-							class="py-1 px-2 italic text-sm border-2 border-dashed border-gray-300 rounded bg-white bg-opacity-50"
+							class="py-1 px-2 text-sm italic bg-white bg-opacity-50 rounded border-2 border-gray-300 border-dashed"
 							value={formatString}
 						/>
 					</dt>
