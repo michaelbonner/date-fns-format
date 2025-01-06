@@ -112,7 +112,7 @@
 	</div>
 
 	<div>
-		&copy; {new Date().getFullYear()}
+		&copy; 2023-{new Date().getFullYear()}
 		<a class="underline underline-offset-2" href="https://michaelbonner.dev/"> Michael Bonner </a>
 	</div>
 </main>
