@@ -76,7 +76,7 @@
 				<label>
 					<input
 						bind:value={testFormat}
-						class="py-2 px-4 text-sm bg-white bg-opacity-50 rounded border"
+						class="py-2 px-4 text-sm bg-white bg-opacity-50 rounded-sm border"
 						placeholder="Test format string"
 						type="text"
 					/>
@@ -95,7 +95,7 @@
 						<input
 							aria-label={`Format string: ${formatString}`}
 							disabled
-							class="py-1 px-2 text-sm italic bg-white bg-opacity-50 rounded border-2 border-gray-300 border-dashed"
+							class="py-1 px-2 text-sm italic bg-white bg-opacity-50 rounded-sm border-2 border-gray-300 border-dashed"
 							value={formatString}
 						/>
 					</dt>
