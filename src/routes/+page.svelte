@@ -117,8 +117,10 @@
 	</div>
 </main>
 
-<style lang="postcss">
+<style>
+	@reference "tailwindcss/theme";
+
 	:global(html) {
-		background-color: theme(colors.gray.100);
+		background-color: theme(--color-gray-100);
 	}
 </style>
