@@ -60,23 +60,25 @@
 	<link rel="canonical" href="https://date-fns.michaelbonner.dev/" />
 </svelte:head>
 
-<main class="grid gap-12 py-4">
-	<h1 class="text-3xl font-bold lg:text-5xl">date-fns format helper</h1>
-	<div class="text-xl">
-		<span>Reference Time:</span>
-		<span>
-			{now.toLocaleDateString()}
-			{now.toLocaleTimeString()}
-		</span>
+<main class="grid gap-12 py-4 text-sky-950">
+	<div class="grid gap-6">
+		<h1 class="text-5xl font-black lg:text-6xl xl:text-8xl">date-fns format helper</h1>
+		<div class="text-lg font-light">
+			<span>Reference Time:</span>
+			<span>
+				{now.toLocaleDateString()}
+				{now.toLocaleTimeString()}
+			</span>
+		</div>
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl font-bold lg:text-3xl">Test</h2>
-		<dl class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl border">
+		<dl class="grid gap-1 py-3 px-6 bg-white/50 rounded-xl border">
 			<dt class="text-sm">
 				<label>
 					<input
 						bind:value={testFormat}
-						class="py-2 px-4 text-sm bg-white bg-opacity-50 rounded-sm border"
+						class="py-2 px-4 text-sm bg-white/50 focus:bg-white focus:outline-1 outline-sky-700 rounded-md border"
 						placeholder="Test format string"
 						type="text"
 					/>
@@ -90,12 +92,12 @@
 
 		<div class="grid gap-y-2 gap-x-4 md:grid-cols-2 xl:grid-cols-3">
 			{#each formatStrings as formatString}
-				<dl class="grid gap-1 py-3 px-6 bg-white bg-opacity-50 rounded-xl">
+				<dl class="grid gap-1 py-3 px-6 bg-white/50 rounded-xl">
 					<dt class="text-sm">
 						<input
 							aria-label={`Format string: ${formatString}`}
 							disabled
-							class="py-1 px-2 text-sm italic bg-white bg-opacity-50 rounded-sm border-2 border-gray-300 border-dashed"
+							class="py-1 px-2 text-sm italic bg-white/50 rounded-md border-2 border-gray-300 border-dashed"
 							value={formatString}
 						/>
 					</dt>
