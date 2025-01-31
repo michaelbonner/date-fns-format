@@ -44,7 +44,7 @@
 
 <svelte:head>
 	<title>date-fns format helper</title>
-	<meta name="theme-color" content="#076971" />
+	<meta name="theme-color" content="#062F4A" />
 	<meta name="color-scheme" content="light only" />
 	<meta
 		name="description"
