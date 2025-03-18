@@ -19,10 +19,14 @@
 }
 
 body {
-	background-image: radial-gradient(
-		farthest-corner circle at 30% 20% in oklab,
-		oklch(78.94% 0.1048 229.08) 0%,
-		oklch(77.94% 0.1323 9.87) 100%
-	);
+	background-color: #99ffac;
+	background-image:
+		radial-gradient(at 57% 97%, hsla(197, 62%, 75%, 1) 0px, transparent 50%),
+		radial-gradient(at 90% 21%, hsla(28, 82%, 66%, 1) 0px, transparent 50%),
+		radial-gradient(at 21% 32%, hsla(276, 62%, 69%, 1) 0px, transparent 50%),
+		radial-gradient(at 29% 7%, hsla(4, 71%, 74%, 1) 0px, transparent 50%),
+		radial-gradient(at 86% 50%, hsla(1, 68%, 67%, 1) 0px, transparent 50%),
+		radial-gradient(at 8% 3%, hsla(135, 63%, 73%, 1) 0px, transparent 50%),
+		radial-gradient(at 41% 76%, hsla(104, 67%, 72%, 1) 0px, transparent 50%);
 	min-height: 100vh;
 }
