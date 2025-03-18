@@ -5,7 +5,7 @@
 
 	let testFormat = 'yyyy-MM-dd HH:mm:ss';
 
-	let testFormatDateString = '';
+	let testFormatDateString = format(new Date(), testFormat);
 
 	setInterval(() => {
 		now = new Date();
@@ -73,13 +73,23 @@
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl font-bold lg:text-3xl">Test</h2>
-		<dl class="grid gap-1 py-3 px-6 bg-white/50 rounded-xl border">
+		<dl class="grid gap-1 py-3 px-6 bg-white/70 rounded-xl border max-w-2xl">
 			<dt class="text-sm">
-				<label>
+				<label class="grid gap-4">
+					<p>
+						Enter a format string to test. <a
+							href="https://date-fns.org/docs/format"
+							class="underline underline-offset-2">Docs Reference</a
+						>
+					</p>
 					<input
+						autocapitalize="off"
+						autocomplete="off"
+						autocorrect="off"
 						bind:value={testFormat}
-						class="py-2 px-4 text-sm bg-white/50 focus:bg-white focus:outline-1 outline-sky-700 rounded-md border"
+						class="py-2 px-4 text-sm bg-white/70 focus:bg-white focus:outline-1 outline-sky-700 rounded-md border"
 						placeholder="Test format string"
+						spellcheck="false"
 						type="text"
 					/>
 				</label>
@@ -90,14 +100,14 @@
 	<div class="grid gap-4">
 		<h2 class="text-2xl font-bold lg:text-3xl">Useful Formats</h2>
 
-		<div class="grid gap-y-2 gap-x-4 md:grid-cols-2 xl:grid-cols-3">
+		<div class="grid gap-y-2 gap-x-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
 			{#each formatStrings as formatString}
-				<dl class="grid gap-1 py-3 px-6 bg-white/50 rounded-xl">
+				<dl class="grid gap-1 py-3 px-6 bg-white/70 rounded-xl">
 					<dt class="text-sm">
 						<input
 							aria-label={`Format string: ${formatString}`}
 							disabled
-							class="py-1 px-2 text-sm italic bg-white/50 rounded-md border-2 border-gray-300 border-dashed"
+							class="py-1 px-2 text-sm italic bg-white/70 rounded-md border-2 border-gray-300 border-dashed"
 							value={formatString}
 						/>
 					</dt>
