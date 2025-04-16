@@ -53,6 +53,7 @@
 
 	<meta property="og:image" content="https://date-fns.michaelbonner.dev/og-image.jpg" />
 	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://date-fns.michaelbonner.dev/" />
 	<meta property="og:title" content="date-fns format helper" />
 
 	<meta name="twitter:card" content="summary_large_image" />
