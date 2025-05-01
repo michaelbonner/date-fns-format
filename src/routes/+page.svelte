@@ -74,29 +74,31 @@
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl font-bold lg:text-3xl">Test</h2>
-		<dl class="grid gap-1 py-3 px-6 bg-white/70 rounded-xl border max-w-2xl">
-			<dt class="text-sm">
-				<label class="grid gap-4">
-					<p>
-						Enter a format string to test. <a
-							href="https://date-fns.org/docs/format"
-							class="underline underline-offset-2">Docs Reference</a
-						>
-					</p>
-					<input
-						autocapitalize="off"
-						autocomplete="off"
-						autocorrect="off"
-						bind:value={testFormat}
-						class="py-2 px-4 text-sm bg-white/70 focus:bg-white focus:outline-1 outline-sky-700 rounded-md border"
-						placeholder="Test format string"
-						spellcheck="false"
-						type="text"
-					/>
-				</label>
-			</dt>
-			<dd class="font-bold">{testFormatDateString}</dd>
-		</dl>
+		<div class="grid gap-4 xl:grid-cols-3 2xl:grid-cols-4">
+			<dl class="grid gap-1 xl:col-span-2 py-3 px-6 bg-white/70 rounded-xl border">
+				<dt class="text-sm">
+					<label class="grid gap-4">
+						<p>
+							Enter a format string to test. <a
+								href="https://date-fns.org/docs/format"
+								class="underline underline-offset-2">Docs Reference</a
+							>
+						</p>
+						<input
+							autocapitalize="off"
+							autocomplete="off"
+							autocorrect="off"
+							bind:value={testFormat}
+							class="py-2 px-4 text-sm bg-white/70 focus:bg-white focus:outline-1 outline-sky-700 rounded-md border"
+							placeholder="Test format string"
+							spellcheck="false"
+							type="text"
+						/>
+					</label>
+				</dt>
+				<dd class="font-bold">{testFormatDateString}</dd>
+			</dl>
+		</div>
 	</div>
 	<div class="grid gap-4">
 		<h2 class="text-2xl font-bold lg:text-3xl">Useful Formats</h2>
