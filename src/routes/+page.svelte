@@ -13,6 +13,7 @@
 		try {
 			testFormatDateString = format(now, testFormat);
 		} catch (error) {
+			console.error(error);
 			testFormatDateString = 'Invalid format';
 		}
 	}, 500);
@@ -104,7 +105,7 @@
 		<h2 class="text-2xl font-bold lg:text-3xl">Useful Formats</h2>
 
 		<div class="grid gap-y-2 gap-x-4 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
-			{#each formatStrings as formatString}
+			{#each formatStrings as formatString (formatString)}
 				<dl class="grid gap-1 py-3 px-6 bg-white/70 rounded-xl">
 					<dt class="text-sm">
 						<input
