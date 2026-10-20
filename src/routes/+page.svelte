@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { format } from 'date-fns';
+	import { resolve } from '$app/paths';
 	import { onMount } from 'svelte';
 
 	let now = new Date();
@@ -80,7 +81,9 @@
 <main class="isolate">
 	<header class="border-b border-white/10 bg-[#102f2b] text-[#f7f5ef]">
 		<div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-5 sm:px-8">
-			<a href="/" aria-label="Homepage" class="font-semibold tracking-tight">date-fns / format</a>
+			<a href={resolve('/')} aria-label="Homepage" class="font-semibold tracking-tight"
+				>date-fns / format</a
+			>
 			<a
 				href="https://date-fns.org/docs/format"
 				class="text-base/7 font-medium text-emerald-100 underline decoration-emerald-300/50 underline-offset-4 sm:text-sm/6"
